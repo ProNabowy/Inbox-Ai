@@ -10,10 +10,10 @@ module.exports = {
   },
   rewrites: async () => {
     return [
-      {
-        // source: "/backend/API/:path*",
-        // destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`,
-      },
+      //   {
+      //     // source: "/backend/API/:path*",
+      //     // destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`,
+      //   },
     ];
   },
   images: {
