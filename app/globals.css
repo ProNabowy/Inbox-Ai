@@ -2,7 +2,8 @@
 
 @import "./tailwind.config.css";
 
-body {
+body,
+.model {
   background: linear-gradient(0deg, var(--color-violet-6, #0E0918) 0%, var(--color-violet-6, #0E0918) 100%), var(--color-white-solid, #FFF);
 }
 

@@ -17,15 +17,15 @@ export default function useHeaderRoutes() {
 				},
 				{
 					name: "integrations",
-					path: "/",
+					path: "/integrations",
 				},
 				{
 					name: "templates",
-					path: "/",
+					path: "/templates",
 				},
 				{
 					name: "AI",
-					path: "/",
+					path: "/ai",
 				},
 			],
 			path: "/",
@@ -36,23 +36,15 @@ export default function useHeaderRoutes() {
 			children: [
 				{
 					name: "Building AI agents",
-					path: "/",
+					path: "/building-ai-agents",
 				},
 				{
 					name: "IT Operations",
-					path: "/",
+					path: "/it-operations",
 				},
 				{
 					name: "Security Operations",
-					path: "/",
-				},
-				{
-					name: "Security Operations",
-					path: "/",
-				},
-				{
-					name: "Security Operations",
-					path: "/",
+					path: "/security-operations",
 				},
 			],
 			path: "/",
@@ -63,23 +55,15 @@ export default function useHeaderRoutes() {
 			children: [
 				{
 					name: "Building AI agents",
-					path: "/",
+					path: "/building-ai-agents",
 				},
 				{
 					name: "IT Operations",
-					path: "/",
+					path: "/it-operations",
 				},
 				{
 					name: "Security Operations",
-					path: "/",
-				},
-				{
-					name: "Security Operations",
-					path: "/",
-				},
-				{
-					name: "Security Operations",
-					path: "/",
+					path: "/security-operations",
 				},
 			],
 			path: "/",
@@ -90,35 +74,19 @@ export default function useHeaderRoutes() {
 			children: [
 				{
 					name: "Product overview",
-					path: "/",
+					path: "/product-overview",
 				},
 				{
 					name: "integrations",
-					path: "/",
+					path: "/integrations",
 				},
 				{
 					name: "templates",
-					path: "/",
+					path: "/templates",
 				},
 				{
 					name: "AI",
-					path: "/",
-				},
-				{
-					name: "Product overview",
-					path: "/",
-				},
-				{
-					name: "integrations",
-					path: "/",
-				},
-				{
-					name: "templates",
-					path: "/",
-				},
-				{
-					name: "AI",
-					path: "/",
+					path: "/ai",
 				},
 			],
 			path: "/",

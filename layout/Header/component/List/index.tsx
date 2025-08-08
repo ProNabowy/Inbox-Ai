@@ -16,7 +16,7 @@ export default function List({ route }: { route: HeaderRoute }) {
 
 			<ul className="shadow-[0_15px_14px_0px_#00000066] p-1 bg-[#000000eb] border border-[#1f192a] rounded-md flex flex-col gap-1 min-w-40 absolute top-full  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
 				{route.children.map((childRoute) => (
-					<li>
+					<li key={childRoute.name}>
 						<Button className="block w-full text-start rounded-md select-none capitalize bg-transparent px-4 py-2 text-white transition hover:bg-[#C1C1C125] relative z-10 text-sm xl:text-md">
 							<Link href={childRoute.path}>{childRoute.name}</Link>
 						</Button>
