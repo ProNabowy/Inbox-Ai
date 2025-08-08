@@ -13,7 +13,7 @@
     --color-mercury: #E4E4E4;
     --color-magenta: #190918;
 
-    --gradient: 99deg, var(--color-orange-57, #FF9B26) 0%, var(--color-red-54, #EE4F27) 100%;
+    --gradient: radial-gradient(80% 73.3% at 100% 50%, #FFF 0%, #FF9B26 90%);
 }
 
 .container {

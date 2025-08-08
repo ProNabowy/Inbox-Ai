@@ -17,7 +17,7 @@ export default function Header() {
 					</li>
 
 					{routes.map((route) => (
-						<li>
+						<li key={route.name}>
 							{route.isList ? (
 								<List route={route} />
 							) : (
