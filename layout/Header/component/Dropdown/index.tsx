@@ -4,17 +4,7 @@ import Button from "@/ui/Button";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-interface Children {
-	children?: HeaderRoute[];
-}
-
-type DivProps = React.HTMLAttributes<HTMLDivElement>;
-
-type Props = DivProps & {
-	route: HeaderRoute;
-};
-
-export default function Dropdown(props: Props): JSX.Element {
+export default function Dropdown(props: { route: HeaderRoute }): JSX.Element {
 	const { route, ...defaultProps } = props;
 
 	const [maxHeight, setMaxHeight] = useState<number>(100);
@@ -66,13 +56,14 @@ export default function Dropdown(props: Props): JSX.Element {
 					<AngleDown />
 				</span>
 			</div>
+
 			<div
 				ref={contentRef}
 				className={`transition ${visible ? "my-2" : ""} overflow-y-hidden relative`}
 				style={{ maxHeight: `${visible ? `${maxHeight}px` : "0px"}` }}
 			>
 				{route.children.map((item, index) => (
-					<ul key={index} className="">
+					<ul key={index}>
 						<li className="text-blue-haze group">
 							<Button className="w-full py-2 px-3 text-start flex items-center">
 								<div
@@ -84,6 +75,7 @@ export default function Dropdown(props: Props): JSX.Element {
 						</li>
 					</ul>
 				))}
+
 				<div className="w-[1px] h-full top-1/2 -translate-y-1/2 absolute left-0 bg-[#f9fafb63]"></div>
 			</div>
 		</div>
