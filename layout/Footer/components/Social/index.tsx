@@ -24,7 +24,7 @@ const data = [
 
 export default function Social() {
 	return (
-		<div className="col-span-2 flex flex-col gap-5">
+		<div className="lg:col-span-2 flex flex-col gap-5">
 			<Logo />
 
 			<p className="text-white text-[15.5px]">Automate without limits</p>
