@@ -52,11 +52,13 @@ function createRipple(event: React.MouseEvent<HTMLButtonElement>) {
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	children?: React.ReactNode;
 	disableRipple?: boolean;
+	variant?: "primary" | "secondary" | "text";
 }
 
 export default function Button({
 	children,
 	disableRipple,
+	variant,
 	...props
 }: ButtonProps) {
 	const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -64,6 +66,38 @@ export default function Button({
 
 		if (!disableRipple) createRipple(e);
 	};
+
+	if (variant === "text") {
+		return (
+			<button {...props} onClick={handleClick}>
+				{children}
+			</button>
+		);
+	}
+
+	if (variant === "secondary") {
+		return (
+			<button
+				{...props}
+				className={`btn-secondary ${props.className || ""}`}
+				onClick={handleClick}
+			>
+				<span className="relative z-10">{children}</span>
+			</button>
+		);
+	}
+
+	if (variant === "primary") {
+		return (
+			<button
+				{...props}
+				className={`bg-[linear-gradient(225deg,#ff0c00,#fd8925)] ${props.className || ""}`}
+				onClick={handleClick}
+			>
+				{children}
+			</button>
+		);
+	}
 
 	return (
 		<button {...props} onClick={handleClick}>

@@ -9,8 +9,8 @@ export default function NavigationGrid() {
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
 				<Social />
 
-				{[data.col_1, data.col_2, data.col_3].map((item) => (
-					<List {...item} />
+				{[data.col_1, data.col_2, data.col_3].map((item, index) => (
+					<List key={index} {...item} />
 				))}
 			</div>
 
@@ -18,8 +18,8 @@ export default function NavigationGrid() {
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 relative z-10">
 				{[data.col_4, data.col_5, data.col_6, data.col_7, data.col_8].map(
-					(item) => (
-						<List {...item} />
+					(item, index) => (
+						<List key={index} {...item} />
 					)
 				)}
 			</div>

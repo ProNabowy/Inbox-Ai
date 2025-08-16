@@ -1,5 +1,11 @@
-import React from "react";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("./(components)/Hero"));
 
 export default function page() {
-  return <div>page</div>;
+	return (
+		<div>
+			<Hero />
+		</div>
+	);
 }

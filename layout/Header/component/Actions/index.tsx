@@ -5,11 +5,8 @@ export default function Actions({ onExpand }: { onExpand: () => void }) {
 	return (
 		<ul className="flex items-center gap-2">
 			<Button
-				className="border border-[#FFFFFF33] hidden sm:flex items-center gap-1 text-white p-[5px] rounded-lg text-sm"
-				style={{
-					background:
-						"linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.42) 100%), rgba(221, 221, 221, 0.00)",
-				}}
+				className="border border-[#FFFFFF33] hidden sm:flex items-center gap-1 text-white p-[5px] rounded-lg text-sm bg-[linear-gradient(180deg,#00000000_0%,#0000006b_100%),#dddddd00]"
+				variant="text"
 			>
 				<Github />
 
@@ -25,11 +22,8 @@ export default function Actions({ onExpand }: { onExpand: () => void }) {
 			</Button>
 
 			<Button
-				className="text-white text-[15px] p-[5px] px-4 font-medium text-nowrap"
-				style={{
-					borderRadius: "8px",
-					background: "linear-gradient(225deg,#ff0c00,#fd8925)",
-				}}
+				className="text-white text-[15px] p-[5px] px-6 font-medium text-nowrap rounded-lg"
+				variant="primary"
 			>
 				Get Started
 			</Button>
