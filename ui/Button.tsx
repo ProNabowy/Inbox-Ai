@@ -41,7 +41,7 @@ function createRipple(event: React.MouseEvent<HTMLButtonElement>) {
 
 	const { bgColor } = getParentBackground(button);
 
-	circle.style.background = `var(--gradient)`;
+	circle.style.background = bgColor;
 
 	const existingRipple = button.getElementsByClassName("ripple")[0];
 	if (existingRipple) existingRipple.remove();

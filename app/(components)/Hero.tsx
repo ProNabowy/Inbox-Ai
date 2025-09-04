@@ -3,7 +3,7 @@ import Button from "@/ui/Button";
 export default function Hero() {
 	return (
 		<div className="relative">
-			<div className="container flex items-center gap-10 justify-between py-20 relative z-10">
+			<div className="container flex items-center gap-10 justify-between py-10 sm:py-20 relative z-1">
 				<div className="flex flex-col gap-3">
 					<h1 className="text-[40px] bg-clip-text text-transparent bg-gradient-to-r from-white to-[#7C65A1]">
 						Flexible AI workflow automation

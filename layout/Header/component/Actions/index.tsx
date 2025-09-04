@@ -28,8 +28,8 @@ export default function Actions({ onExpand }: { onExpand: () => void }) {
 				Get Started
 			</Button>
 
-			<Button>
-				<Bars onClick={onExpand} className="size-10 xl:hidden" />
+			<Button onClick={onExpand}>
+				<Bars  className="size-10 xl:hidden" />
 			</Button>
 		</ul>
 	);
