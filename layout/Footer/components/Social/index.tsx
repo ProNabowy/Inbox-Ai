@@ -30,8 +30,8 @@ export default function Social() {
 			<p className="text-white text-[15.5px]">Automate without limits</p>
 
 			<div className="flex items-center gap-4">
-				{data.map((item) => (
-					<Link href={item.url} key={item.url}>
+				{data.map((item, index) => (
+					<Link href={item.url} key={index}>
 						{item.icon}
 					</Link>
 				))}
