@@ -17,7 +17,7 @@ export default function ResponsiveHeader({
 		<Modal
 			anchor="right"
 			extraClassNames={{
-				modal: "model border border-[#1F192A] xl:hidden",
+				modal: "model border border-[#1F192A] xl:hidden z-[100]",
 				overlay: "xl:!hidden",
 			}}
 			open={isExpanded}
