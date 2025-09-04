@@ -40,7 +40,7 @@ export default function Simulator() {
 	}, [activeTab]);
 
 	return (
-		<div className="container">
+		<section className="container">
 			<div className="p-[5px] sm:p-[9px] rounded-xl sm:rounded-3xl border border-[rgba(255,_255,_255,_0.10)]  bg-[linear-gradient(109deg,rgba(227,165,114,0.31)_0%,rgba(87,128,230,0.38)_100%)] shadow-[0_0.451px_0_1px_rgba(255,_255,_255,_0.30)_inset,_0_0_36.047px_0_rgba(255,_255,_255,_0.06)]">
 				<div className="p-0.5 rounded-lg sm:rounded-[19px] bg-gradient-to-b from-[#211A2E] from-10% to-[#000000] to-100% overflow-hidden">
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 p-2">
@@ -68,6 +68,6 @@ export default function Simulator() {
 					/>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
